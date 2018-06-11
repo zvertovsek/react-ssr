@@ -14,6 +14,7 @@ class Users extends Component {
     }
 
     render(){
+        console.log(this.props.users);
         return (
             <div>   
                 Here is a list of users

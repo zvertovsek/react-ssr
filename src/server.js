@@ -18,6 +18,9 @@ app.get('*', (req, res) => {
     });
 
     Promise.all(promises).then(() => {
+        console.log("DONE");
+        console.log(store.getState());
+        
         res.send(renderer(req, store));
     });
     

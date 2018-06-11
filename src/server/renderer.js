@@ -6,6 +6,8 @@ import { renderRoutes } from 'react-router-config';
 import Routes from '../app/routes'; 
 
 export default (req, store) => {
+    console.log("RENDERER:");
+    console.log(store.getState());
     const content = renderToString(
         <Provider store={store}>
             <StaticRouter location={req.path} context={{}}>
